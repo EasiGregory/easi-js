@@ -1,20 +1,11 @@
-let total = 0;
-
 let divisibleNumbers = function () {
-    let someArray = [];
+    let total = 0;
     for (let i = 0; i < 1000; i++) {
         if (i % 3 === 0 || i % 5 === 0) {
-            someArray.push(i);
+            total += i;
         }
     }
-    return someArray;
+    return total;
 };
 
-/**
- * Iterates over the array of number and totals them up
- */
-divisibleNumbers().forEach((number) => {
-    total += number;
-});
-
-console.log('Total of all the numbers that are divisible by 3 and 5 are: ' + total);
+console.log('Total of all the numbers that are divisible by 3 or 5 are: ' + divisibleNumbers());
