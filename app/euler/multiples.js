@@ -1,27 +1,19 @@
 let total = 0;
-numbersArray = [];
 
-/**
- * Checks for numbers divisible by 3 and 5 within desired range and pushes them into an array
- * @param number
- */
-function pushNumbers(number) {
-    let startingPoint = 0;
-    while (startingPoint < number) {
-        if (startingPoint % 3 === 0 || startingPoint % 5 === 0) {
-            console.log(startingPoint);
-            numbersArray.push(startingPoint);
+let divisibleNumbers = function () {
+    let someArray = [];
+    for (let i = 0; i < 1000; i++) {
+        if (i % 3 === 0 || i % 5 === 0) {
+            someArray.push(i);
         }
-        startingPoint++;
     }
-}
-
-pushNumbers(1000);
+    return someArray;
+};
 
 /**
  * Iterates over the array of number and totals them up
  */
-numbersArray.forEach(function (number) {
+divisibleNumbers().forEach((number) => {
     total += number;
 });
 
