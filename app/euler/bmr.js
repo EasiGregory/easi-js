@@ -18,3 +18,4 @@ let yourBmr = calcBmr(212, 72, 32);
 let yourActivity = calcBmrPlusActivity(yourBmr);
 
 console.log(yourActivity);
+console.log('Hello');
