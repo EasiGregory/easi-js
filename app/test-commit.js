@@ -7,3 +7,5 @@ console.log('Commit worked but it came from the wrong user...changed to easigreg
 console.log('Commit worked but it came from the wrong user again...changed to EasiGregory')
 
 console.log('Commit worked but it came from the wrong user again...changed to EasiGregory and email')
+
+console.log('Commit worked but it came from the right user...testing if changes persist')
