@@ -2,8 +2,8 @@ let kg = 0.453592;
 let cent = 2.54;
 
 function calcBmr(weight, height, age) {
-    let weightToKg = weight * kg;
-    let heightToCent = height * cent;
+    const weightToKg = weight * kg;
+    const heightToCent = height * cent;
     console.log(`Your weight in kgs: ${weight * kg}`);
     console.log(`Your height in centimeters: ${height * cent}`);
 
